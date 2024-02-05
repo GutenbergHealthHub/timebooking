@@ -1,26 +1,27 @@
 \thispagestyle{firstpage}
 	
 {\centering
-	\vspace*{2cm}
+	\vspace*{1cm}
 	{\scshape\large \textbf{Zeitbuchungskorrektur zusammengefasst} \par}
 }
 \vspace{1.5cm}
 \par 
 
 \begin{Form}
-
-	\begin{tabular}{p{4cm} p{6cm}} 
+	\begin{tabular}{p{4cm} p{10cm}} 
 		\textbf{Angestellter Name:} & \TextField[name=NameAnst, width=3.5cm]{} \\ \\
 		\textbf{Angestellter Vorname:} & \TextField[name=VorNameAnst, width=3.5cm]{} \\ \\ \textbf{Telefon:} & \TextField[name=TelAnst, width=3.4cm]{} \\ \\
 		\textbf{E-Mail:} & \TextField[name=EMaillAnst, width=5cm]{} \\ \\
 		\textbf{Personalnummer:} & \TextField[name=PerNummAnst, width=2cm]{}\\ \\
-		\textbf{Datum:} & \TextField[name=TT, width=0.7cm, value={TT}]{} / \TextField[name=MM, width=0.7cm, value={MM}]{} / \TextField[name=JJJJ, width=1cm, value={JJJJ}]{} \\ \\
-	\end{tabular} \\ \\ \\
-\textbf{Begründung:} \\ 
-\TextField[multiline, name=description,width=0.9\textwidth,  height=3cm, value={}]{} \\ \\
-Datum: \TextField[name=TTmt, width=0.7cm, value={TT}]{} / \TextField[name=MMmt, width=0.7cm, value={MM}]{} / \TextField[name=JJJJmt, width=1cm, value={JJJJ}]{}, von \TextField[name=SSv, width=0.6cm]{} : \TextField[name=MMv, width=0.6cm]{} bis  \TextField[name=SSb, width=0.6cm]{} : \TextField[name=MMb, width=0.6cm]{}
+		\textbf{Datum:} & \TextField[name=TT, width=0.7cm, value={TT}]{} / \TextField[name=MM, width=0.7cm, value={MM}]{} / \TextField[name=JJJJ, width=1cm, value={JJJJ}]{} \\ \\		
+	\end{tabular} \\ \\
+\textbf{Zeitraum}: \\
+\TextField[multiline, name=description, width=0.9\textwidth, value={}]{}
 
-\vspace{1.5cm}
+\textbf{Begründung:} \\ 
+\TextField[multiline, name=description,width=0.9\textwidth,  height=3cm, value={}]{} \\
+
+
 \noindent
 \begin{tabular}{ p{0.5\textwidth} p{0.5\textwidth} }
 \digsigfield{6cm}{2cm}{Angestellter}	&        \digsigfield{6cm}{2cm}{Vorgesetzete}         \\
@@ -28,4 +29,3 @@ Datum: \TextField[name=TTmt, width=0.7cm, value={TT}]{} / \TextField[name=MMmt, 
 \end{tabular}
 
 \end{Form}
-%\end{letter}
